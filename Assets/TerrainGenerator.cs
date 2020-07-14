@@ -4,16 +4,41 @@ using UnityEngine;
 
 public class TerrainGenerator : MonoBehaviour
 {
+    public int seed;
     public int width;
     public int height;
     public float noiseScale;
-
+    public int octaves;
+    [Range(0, 1)] public float persistance;
+    public float lacunarity;
+    public Vector2 offset;
     public bool autoReload;
     public Renderer texturerenderer;
 
     public void GenerateMap()
     {
-        float[,] noiseMap = NoiseGenerator.Generate(width, height, noiseScale);
+        if (width < 1)
+        {
+            width = 1;
+        }
+
+        if (height < 1)
+        {
+            height = 1;
+        }
+
+        if (lacunarity < 1)
+        {
+            lacunarity = 1;
+        }
+
+        if (octaves < 0)
+        {
+            octaves = 0;
+        }
+
+        float[,] noiseMap =
+            NoiseGenerator.Generate(seed, width, height, noiseScale, octaves, persistance, lacunarity, offset);
         GenerateTerrain(noiseMap);
     }
 
