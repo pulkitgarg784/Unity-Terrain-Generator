@@ -8,6 +8,7 @@ public class TerrainGenerator : MonoBehaviour
     public int height;
     public float noiseScale;
 
+    public bool autoReload;
     public Renderer texturerenderer;
 
     public void GenerateMap()

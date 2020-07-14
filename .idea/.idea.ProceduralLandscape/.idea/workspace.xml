@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f046d9e-c4d1-4430-91ba-eecc3b26d174" name="Default Changelist" comment="Added noise Generator">
+    <list default="true" id="6f046d9e-c4d1-4430-91ba-eecc3b26d174" name="Default Changelist" comment="Create Random perlin noise for the terrain generator to work off.">
       <changelist_data />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TerrainGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TerrainGenerator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594698724259</updated>
-      <workItem from="1594698739850" duration="2340000" />
+      <workItem from="1594698739850" duration="2896000" />
     </task>
     <task id="LOCAL-00001" summary="Added noise Generator">
       <created>1594699655158</created>
@@ -78,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594699655158</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create Random perlin noise for the terrain generator to work off.">
+      <created>1594701203582</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594701203582</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,13 +104,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added noise Generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added noise Generator" />
+    <MESSAGE value="Create Random perlin noise for the terrain generator to work off." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Random perlin noise for the terrain generator to work off." />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1594699915447">
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1594701207872">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594699915447" />
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594701207872" />
     <state x="695" y="423" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594699839569">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
