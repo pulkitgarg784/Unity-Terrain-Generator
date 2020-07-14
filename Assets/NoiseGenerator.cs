@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class NoiseGenerator
 {
-    public static float[,] NoisemapGenerator(int width, int height,float scale)
+    public static float[,] Generate(int width, int height,float scale)
     {
         if (scale<=0)
         {

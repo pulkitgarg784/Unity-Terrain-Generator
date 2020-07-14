@@ -10,6 +10,6 @@ public class TerrainGenerator : MonoBehaviour
 
     public void GenerateTerrain()
     {
-        float
+        float[,] noisemap = NoiseGenerator.Generate(width, height, noiseScale);
     }
 }
