@@ -150,7 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e55540f4e8e6943992ea67033fa979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seed: -8117
+  displayMode: 1
+  seed: -4201
   width: 100
   height: 100
   noiseScale: 25.06
@@ -160,6 +161,12 @@ MonoBehaviour:
   offset: {x: 13.4, y: 6.26}
   autoReload: 1
   texturerenderer: {fileID: 1496260982}
+  TextureFilterMode: 0
+  TerrainColors:
+  - height: 0.4
+    Color: {r: 0.039649326, g: 0.4419256, b: 0.9339623, a: 0}
+  - height: 1
+    Color: {r: 0.21649878, g: 0.5754717, b: 0.04071733, a: 0}
 --- !u!4 &671699176
 Transform:
   m_ObjectHideFlags: 0

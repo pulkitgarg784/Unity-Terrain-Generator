@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class TerrainGenerator : MonoBehaviour
 {
+    public enum DisplayMode
+    {
+        NoiseMap,
+        ColorMap
+    };
+
+    public DisplayMode displayMode;
     public int seed;
     public int width;
     public int height;
@@ -14,6 +21,8 @@ public class TerrainGenerator : MonoBehaviour
     public Vector2 offset;
     public bool autoReload;
     public Renderer texturerenderer;
+    public FilterMode TextureFilterMode;
+    public TerrainColor[] TerrainColors;
 
     public void GenerateMap()
     {
@@ -39,26 +48,43 @@ public class TerrainGenerator : MonoBehaviour
 
         float[,] noiseMap =
             NoiseGenerator.Generate(seed, width, height, noiseScale, octaves, persistance, lacunarity, offset);
-        GenerateTerrain(noiseMap);
-    }
-
-    public void GenerateTerrain(float[,] noisemap)
-    {
-        int width = noisemap.GetLength(0);
-        int height = noisemap.GetLength(1);
-        Texture2D texture = new Texture2D(width, height);
         Color[] colormap = new Color[width * height];
         for (int y = 0; y < height; y++)
         {
             for (int x = 0; x < width; x++)
             {
-                colormap[y * width + x] = Color.Lerp(Color.black, Color.white, noisemap[x, y]);
+                float PointHeight = noiseMap[x, y];
+                for (int i = 0; i < TerrainColors.Length; i++)
+                {
+                    if (PointHeight <= TerrainColors[i].height)
+                    {
+                        colormap[y * width + x] = TerrainColors[i].Color;
+                        break;
+                    }
+                }
             }
         }
 
-        texture.SetPixels(colormap);
-        texture.Apply();
+        if (displayMode == DisplayMode.NoiseMap)
+        {
+            GenerateTerrainTexture(TerrainTexture.TextureHeightMap(noiseMap, TextureFilterMode));
+        }
+        else if (displayMode == DisplayMode.ColorMap)
+        {
+            GenerateTerrainTexture(TerrainTexture.TextureColorMap(colormap, width, height, TextureFilterMode));
+        }
+    }
+
+    public void GenerateTerrainTexture(Texture2D texture)
+    {
         texturerenderer.sharedMaterial.mainTexture = texture;
-        texturerenderer.transform.localScale = new Vector3(width, 1, height);
+        texturerenderer.transform.localScale = new Vector3(texture.width, 1, texture.height);
+    }
+
+    [System.Serializable]
+    public struct TerrainColor
+    {
+        public float height;
+        public Color Color;
     }
 }

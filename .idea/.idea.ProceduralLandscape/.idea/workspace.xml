@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f046d9e-c4d1-4430-91ba-eecc3b26d174" name="Default Changelist" comment="Added autoupdate feature">
-      <changelist_data />
+    <list default="true" id="6f046d9e-c4d1-4430-91ba-eecc3b26d174" name="Default Changelist" comment="Added Scaling, Persistence and octaves">
+      <changelist_data name="" email="" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NoiseGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NoiseGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TerrainGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TerrainGenerator.cs" afterDir="false" />
     </list>
@@ -19,6 +19,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Editor/MapGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TerrainTexture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NoiseGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TerrainGenerator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -27,6 +28,7 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/NoiseGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/MapGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/TerrainTexture.cs" />
         <option value="$PROJECT_DIR$/Assets/TerrainGenerator.cs" />
       </list>
     </option>
@@ -45,6 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -70,7 +73,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594698724259</updated>
-      <workItem from="1594698739850" duration="4922000" />
+      <workItem from="1594698739850" duration="5497000" />
+      <workItem from="1594734610391" duration="2113000" />
     </task>
     <task id="LOCAL-00001" summary="Added noise Generator">
       <created>1594699655158</created>
@@ -93,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594701765337</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Scaling, Persistence and octaves">
+      <created>1594703773858</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594703773858</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,7 +117,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -116,18 +129,27 @@
     <MESSAGE value="Added noise Generator" />
     <MESSAGE value="Create Random perlin noise for the terrain generator to work off." />
     <MESSAGE value="Added autoupdate feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added autoupdate feature" />
+    <MESSAGE value="Added Scaling, Persistence and octaves" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Scaling, Persistence and octaves" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1594701768067">
+    <state x="600" y="167" key="SettingsEditor" timestamp="1594704233448">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594701768067" />
+    <state x="600" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1594704233448" />
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1594703782413">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594703782413" />
     <state x="695" y="423" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594699839569">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="695" y="423" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594699839569" />
+    <state x="776" y="444" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1594704075824">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="776" y="444" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594704075824" />
     <state x="532" y="239" width="840" height="1034" key="run.anything.popup" timestamp="1594699711417">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

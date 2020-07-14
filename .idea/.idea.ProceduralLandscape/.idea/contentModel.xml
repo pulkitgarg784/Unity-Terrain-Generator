@@ -12,6 +12,7 @@
         </e>
         <e p="NoiseGenerator.cs" t="Include" />
         <e p="TerrainGenerator.cs" t="Include" />
+        <e p="TerrainTexture.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
