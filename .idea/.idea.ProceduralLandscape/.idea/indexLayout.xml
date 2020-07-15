@@ -20,7 +20,10 @@
       <Path>Library</Path>
       <Path>Logs</Path>
       <Path>Temp</Path>
+      <Path>images</Path>
+      <Path>javascripts</Path>
       <Path>obj</Path>
+      <Path>stylesheets</Path>
     </explicitExcludes>
   </component>
 </project>
