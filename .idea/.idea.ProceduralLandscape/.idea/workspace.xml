@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f046d9e-c4d1-4430-91ba-eecc3b26d174" name="Default Changelist" comment="Added Scaling, Persistence and octaves">
+    <list default="true" id="6f046d9e-c4d1-4430-91ba-eecc3b26d174" name="Default Changelist" comment="2d Texturing">
       <changelist_data name="" email="" />
+      <change afterPath="$PROJECT_DIR$/Assets/IngameEditor.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProceduralLandscape/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TerrainGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TerrainGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Editor/MapGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TerrainTexture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NoiseGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/IngameEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TerrainGenerator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -28,8 +34,9 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/NoiseGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/MapGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/TerrainTexture.cs" />
         <option value="$PROJECT_DIR$/Assets/TerrainGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/TerrainTexture.cs" />
+        <option value="$PROJECT_DIR$/Assets/IngameEditor.cs" />
       </list>
     </option>
   </component>
@@ -74,7 +81,8 @@
       <option name="presentableId" value="Default" />
       <updated>1594698724259</updated>
       <workItem from="1594698739850" duration="5497000" />
-      <workItem from="1594734610391" duration="2113000" />
+      <workItem from="1594734610391" duration="3568000" />
+      <workItem from="1594783597002" duration="1256000" />
     </task>
     <task id="LOCAL-00001" summary="Added noise Generator">
       <created>1594699655158</created>
@@ -104,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594703773858</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2d Texturing">
+      <created>1594742906057</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594742906057</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +145,8 @@
     <MESSAGE value="Create Random perlin noise for the terrain generator to work off." />
     <MESSAGE value="Added autoupdate feature" />
     <MESSAGE value="Added Scaling, Persistence and octaves" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Scaling, Persistence and octaves" />
+    <MESSAGE value="2d Texturing" />
+    <option name="LAST_COMMIT_MESSAGE" value="2d Texturing" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -138,10 +154,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="600" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1594704233448" />
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1594703782413">
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1594742913991">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594703782413" />
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594742913991" />
     <state x="695" y="423" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594699839569">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

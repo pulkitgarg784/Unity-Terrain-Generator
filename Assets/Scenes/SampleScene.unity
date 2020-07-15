@@ -151,22 +151,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayMode: 1
-  seed: -4201
+  seed: 6327
   width: 100
   height: 100
   noiseScale: 25.06
   octaves: 4
-  persistance: 0.5
+  persistance: 0.45
   lacunarity: 1.87
   offset: {x: 13.4, y: 6.26}
   autoReload: 1
   texturerenderer: {fileID: 1496260982}
   TextureFilterMode: 0
   TerrainColors:
+  - height: 0.3
+    Color: {r: 0.004360993, g: 0.42005056, b: 0.9245283, a: 0}
   - height: 0.4
-    Color: {r: 0.039649326, g: 0.4419256, b: 0.9339623, a: 0}
+    Color: {r: 0.11294055, g: 0.46253148, b: 0.8867924, a: 0}
+  - height: 0.45
+    Color: {r: 0.745283, g: 0.72560674, b: 0.48162156, a: 0}
+  - height: 0.55
+    Color: {r: 0.23099108, g: 0.5943396, b: 0.053266272, a: 0}
+  - height: 0.6
+    Color: {r: 0.17262693, g: 0.4528302, b: 0.03631186, a: 0}
+  - height: 0.7
+    Color: {r: 0.36078432, g: 0.2509804, b: 0.2, a: 0}
+  - height: 0.9
+    Color: {r: 0.2924528, g: 0.21049066, b: 0.1724368, a: 0}
   - height: 1
-    Color: {r: 0.21649878, g: 0.5754717, b: 0.04071733, a: 0}
+    Color: {r: 1, g: 1, b: 1, a: 0}
 --- !u!4 &671699176
 Transform:
   m_ObjectHideFlags: 0
